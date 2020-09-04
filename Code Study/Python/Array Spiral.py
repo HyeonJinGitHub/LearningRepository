@@ -1,5 +1,5 @@
 def SpiralArray(x, y):
-    sa_list = [[0 for x in range(x)] for y in range(y)]
+    sa_list = [[0 for y in range(y)] for x in range(x)]
     '''
     count : 1부터 X*Y 의 값을 차례로 저장할 변수
     flag : 진행 방향을 정할 변수
