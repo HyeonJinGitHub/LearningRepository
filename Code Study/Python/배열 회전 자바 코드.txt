@@ -1,0 +1,114 @@
+public class RotateArray {
+   private static int n;
+
+   public static void main(String[] args) {
+      n = 5;
+      int[][] arr = new int[n][n]; //정사각형만 가능
+      int cnt = 1;
+      for(int i=0; i<n; ++i) {
+         for(int j=0; j<n; ++j) {
+            arr[i][j] = cnt++;
+         }
+      }
+      
+      System.out.println("===변경 전===");
+      for(int i=0; i<n; ++i) {
+         for(int j=0; j<n; ++j) {
+            System.out.print(arr[i][j] + "\t");
+         }
+         System.out.println();
+      }
+      
+      int temp[][] = rotateRight(arr);
+      
+      System.out.println("===시계방향 변경 후===");
+      for(int i=0; i<n; ++i) {
+         for(int j=0; j<n; ++j) {
+            System.out.print(temp[i][j] + "\t");
+         }
+         System.out.println();
+      }
+      
+      temp = rotateLeft(arr);
+      System.out.println("===반시계방향 변경 후===");
+      for(int i=0; i<n; ++i) {
+         for(int j=0; j<n; ++j) {
+            System.out.print(temp[i][j] + "\t");
+         }
+         System.out.println();
+      }
+      
+      temp = reverseTopBottom(arr);
+      System.out.println("===위아래 뒤집은 후===");
+      for(int i=0; i<n; ++i) {
+         for(int j=0; j<n; ++j) {
+            System.out.print(temp[i][j] + "\t");
+         }
+         System.out.println();
+      }
+      
+      temp = reverseLeftRight(arr);
+      System.out.println("===좌우반전 후===");
+      for(int i=0; i<n; ++i) {
+         for(int j=0; j<n; ++j) {
+            System.out.print(temp[i][j] + "\t");
+         }
+         System.out.println();
+      }
+      
+   }
+
+
+   //시계방향
+   private static int[][] rotateRight(int[][] arr) {
+      int[][] next = new int[n][n];
+      
+      for(int i=0; i<n; ++i) {
+         for(int j=0; j<n; ++j) {
+            next[i][j] = arr[n-j-1][i];
+         }
+      }
+      
+      return next;
+   }
+   
+   //반시계방향
+   private static int[][] rotateLeft(int[][] arr) {
+      int[][] next = new int[n][n];
+      
+      for(int i=0; i<n; ++i) {
+         for(int j=0; j<n; ++j) {
+            next[i][j] = arr[j][n-i-1];
+         }
+      }
+      
+      return next;
+   }
+
+   //상하뒤집기
+   private static int[][] reverseTopBottom(int[][] arr){
+      int[][] next = new int[n][n];
+      
+      for(int i=0; i<n; ++i) {
+         for(int j=0; j<n; ++j) {
+            next[i][j] = arr[n-i-1][j];
+         }
+      }
+      
+      return next;
+   }
+   
+   //좌우반전
+   private static int[][] reverseLeftRight(int[][] arr) {
+      int[][] next = new int[n][n];
+      
+      for(int i=0; i<n; ++i) {
+         for(int j=0; j<n; ++j) {
+            next[i][j] = arr[i][n-j-1];
+         }
+      }
+      return next;
+   }
+   
+
+}
