@@ -40,6 +40,10 @@ if __name__ == '__main__':
     s, tx, ty = map(int, sys.stdin.readline().split())
     bfs()
 
+# 밑에 코드처럼 PriorityQueue 를 사용하면 시간초과로 통과하지 못한다.
+# 정확한 이유는 내부 동작 흐름을 봐야겠지만, 여러 검색을 한 결과 PriorityQueue가 heapq보다 느리다고 한다.
+# 우선순위큐로 문제를 풀 경우 heapq 를 사용하는 것이 나은것 같다.
+
 #
 # import sys
 # import queue
