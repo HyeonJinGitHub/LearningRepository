@@ -1,4 +1,3 @@
-
 class Solution {
     public static String solution(String p) {
         return go(p);
