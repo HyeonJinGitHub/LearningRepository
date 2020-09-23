@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-class Solution {
+class Solution { //완전 탐색-조합을 이용한 방법
 	private static int[][] cnt;
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
@@ -32,7 +32,7 @@ class Solution {
 			// W B R 순서로 칠하는 경우의 수, 조합, 2중 for문으로 구현, 
 			//각 경우의 최솟값 갱신해서 출력, i, j 결정
 			
-			//0행 <= W < i행
+			//0행 <= W < i행 //요 경계를 구해보기
 			//i행 <= B < j행
 			//j행 <= R < N행
 			int minCnt = Integer.MAX_VALUE;
