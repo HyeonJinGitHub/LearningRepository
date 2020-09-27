@@ -14,26 +14,14 @@ public class Main {
 			int c = Integer.parseInt(st.nextToken());
 			int d = Integer.parseInt(st.nextToken());
 			
-//			System.out.println(a);
-//			System.out.println(b);
-//			System.out.println(c);
-//			System.out.println(d);
-//			System.out.println("==");
+
 			for(int k=a; k<c; ++k) {
 				for(int l=b; l<d; ++l) {
-//					System.out.println(k+","+l);
 					arr[k][l] = true;
 				}
 			}
-		}
 		
-//		for(int i=0; i<10; ++i) {
-//			for(int j=0; j<10; ++j) {
-//				System.out.print(arr[i][j]?"1":"0");
-//			}
-//			System.out.println();
-//		}
-		
+
 		int cnt = 0;
 		for(int i=0; i<100; ++i) {
 			for(int j=0; j<100; ++j) {
