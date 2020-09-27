@@ -14,13 +14,14 @@ public class Main {
 			int c = Integer.parseInt(st.nextToken());
 			int d = Integer.parseInt(st.nextToken());
 			
+
 			for(int k=a; k<c; ++k) {
 				for(int l=b; l<d; ++l) {
 					arr[k][l] = true;
 				}
 			}
-		}
 		
+
 		int cnt = 0;
 		for(int i=0; i<100; ++i) {
 			for(int j=0; j<100; ++j) {
