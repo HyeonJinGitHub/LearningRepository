@@ -2,7 +2,7 @@
 name: 'Daily Problem'
 about: 오늘 풀 문제!
 title: "[날짜] 출처 / 난이도 / 문제번호 - 문제이름"
-labels: Problem Pool, Daily
+labels: Problem List, Daily
 assignees: ''
 
 ---
