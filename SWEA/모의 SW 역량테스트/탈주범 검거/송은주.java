@@ -59,9 +59,7 @@ class Solution{
 		visited[sX][sY] = true;
 		int cnt = 0;
 		while(true) {
-//			System.out.println(L+"냥옹");
 			int qSize = q.size();
-//			System.out.println(qSize+"ㅋㅋㅋ");
 			for(int qS=0; qS<qSize; ++qS) {
 				int[] t = q.poll();
 				int x = t[0];
@@ -122,10 +120,7 @@ class Solution{
 		case 3:
 			switch(k) {
 			case 0:
-				if(nextPipe==1 || nextPipe==6 || nextPipe==7 || nextPipe==3) {
-//				System.out.println(k+","+nextPipe+"걸려떠");
-					return true;
-				}
+				if(nextPipe==1 || nextPipe==6 || nextPipe==7 || nextPipe==3) return true;
 				break;
 			case 1:
 				if(nextPipe==4 || nextPipe==5 || nextPipe==3 || nextPipe==1) return true;
