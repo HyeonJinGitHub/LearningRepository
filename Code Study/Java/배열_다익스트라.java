@@ -32,7 +32,7 @@ public class Solution {
 
 	private static int dijkstra(int sX, int sY, int eX, int eY) {
 		int[][] minTime = new int[N][N];
-		boolean[][] visited = new boolean[N][N];
+// 		boolean[][] visited = new boolean[N][N];
 		
 		//모든 최소 비용을 최댓값으로 초기화
 		for(int i=0; i<N; ++i) {
@@ -60,7 +60,7 @@ public class Solution {
 			y = current[1];
 			cost = current[2];
 			
-			if(visited[x][y]) continue;
+// 			if(visited[x][y]) continue;
 			
 			if(x==eX && y==eY) return cost;
 			
@@ -72,7 +72,7 @@ public class Solution {
 				int nY = y + dy[k];
 				
 				if(0<=nX && nX < N && 0<= nY && nY < N) {
-					if(!visited[nX][nY] && minTime[nX][nY] > cost+map[nX][nY]) {
+					if(/*!visited[nX][nY] && */minTime[nX][nY] > cost+map[nX][nY]) {
 						minTime[nX][nY] = cost+map[nX][nY];
 						
 						//갱신 된 최소 비용을 pq에 넣는다.
