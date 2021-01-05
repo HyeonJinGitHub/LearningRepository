@@ -1,4 +1,4 @@
-<!-- Title: [2020.10.01] 문제 풀이 -->
+<!-- Title: [2021.01.02] 문제 풀이 -->
 <!-- Assignees: 자신 -->
 <!-- Labels: (Solved | Unfinished) -->
 ### - 문제 URL
