@@ -1,7 +1,7 @@
 ---
 name: '8 Weeks Challenge'
 about: 8주 알고리즘 도전!
-title: "[날짜] / 알고리즘 분류"
+title: "[기간] / 알고리즘 분류"
 labels: Problem List, Daily
 assignees: ''
 
