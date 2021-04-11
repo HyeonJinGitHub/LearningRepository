@@ -25,17 +25,17 @@ class Main {
 				if(k+1 > K){
 					
 					answer++;
-					System.out.println("냐옹, 갱신됨!"+answer);
+// 					System.out.println("냐옹, 갱신됨!"+answer);
 					len = 0;
 				}else if(k+1 ==K){
 					answer++;
-					System.out.println("냐옹, 같음!"+answer);
+// 					System.out.println("냐옹, 같음!"+answer);
 					q.poll();
-					System.out.println("아오.."+q.peek());
+// 					System.out.println("아오.."+q.peek());
 					len = 0;
 					flag = true;
 				}else {
-					System.out.println("애옹..");
+// 					System.out.println("애옹..");
 					len = k+1;
 					q.poll();
 				}
